@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="239dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:hint="Last name" />
+
+    <Button
+        android:id="@+id/SayHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SAY HI"
+        android:textColor="#000000"
+        android:backgroundTint="@color/white"
+        android:onClick="sayHi" />
+
+</RelativeLayout>
